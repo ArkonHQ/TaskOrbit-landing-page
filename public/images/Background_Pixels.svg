@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="530" viewBox="0 0 428 530" fill="none">
+    <defs>
+        <!-- Soft shadows for depth -->
+        <filter id="appleShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+        </filter>
+        <filter id="appleShadowLight" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+        </filter>
+
+        <!-- Smooth gradient for white squares -->
+        <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#F2F2F6"/>
+        </linearGradient>
+
+        <!-- Soft gray gradient -->
+        <linearGradient id="grayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8E8E93"/>
+            <stop offset="100%" stop-color="#636366"/>
+        </linearGradient>
+
+        <!-- Dark gradient -->
+        <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2C2C2E"/>
+            <stop offset="100%" stop-color="#1C1C1E"/>
+        </linearGradient>
+
+        <!-- Subtle blur for smoothness -->
+        <filter id="smoothBlur">
+            <feGaussianBlur stdDeviation="0.5"/>
+        </filter>
+    </defs>
+
+    <!-- Gray squares - smooth, large radius -->
+    <g filter="url(#appleShadow)">
+        <rect x="5.4" y="243.9" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+        <rect x="126.6" y="475.5" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+        <rect x="30.4" y="112.6" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+        <rect x="181.1" y="364.7" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+        <rect x="127.3" y="211.1" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+        <rect x="190.9" y="0" width="54.49" height="54.5" rx="14" fill="url(#grayGrad)"/>
+    </g>
+
+    <!-- White squares - frosted, smooth -->
+    <g filter="url(#appleShadow)">
+        <rect x="354.3" y="177.4" width="30.15" height="30.15" rx="10" fill="url(#whiteGrad)"/>
+        <rect x="279.1" y="153.2" width="30.15" height="30.15" rx="10" fill="url(#whiteGrad)"/>
+        <rect x="366.1" y="105.25" width="30.15" height="30.15" rx="10" fill="url(#whiteGrad)"/>
+        <rect x="347" y="294.4" width="30.15" height="30.15" rx="10" fill="url(#whiteGrad)"/>
+        <rect x="237.9" y="133.4" width="29.56" height="29.56" rx="10" fill="url(#whiteGrad)"/>
+        <rect x="398.2" y="217.67" width="30.15" height="30.15" rx="10" fill="url(#whiteGrad)" opacity="0.85"/>
+    </g>
+
+    <!-- Dark squares - smooth, deep -->
+    <g filter="url(#appleShadow)">
+        <rect x="317.7" y="366.2" width="30.15" height="30.15" rx="10" fill="url(#darkGrad)"/>
+        <rect x="122.6" y="40.7" width="29.56" height="29.56" rx="10" fill="url(#darkGrad)"/>
+        <rect x="389.7" y="450" width="30.15" height="30.15" rx="10" fill="url(#darkGrad)"/>
+        <rect x="163.3" y="162.5" width="33.52" height="33.5" rx="10" fill="#3A3A3C"/>
+        <rect x="230.85" y="164.58" width="22.57" height="22.57" rx="8" fill="url(#darkGrad)"/>
+        <rect x="292.3" y="296.25" width="27.25" height="27.25" rx="9" fill="#2C2C2E"/>
+        <rect x="172.3" y="191.5" width="22.57" height="22.57" rx="8" fill="#3A3A3C"/>
+        <rect x="120.1" y="88.15" width="33.33" height="33.32" rx="10" fill="url(#darkGrad)"/>
+    </g>
+
+    <!-- Small accent squares - smooth and subtle -->
+    <g filter="url(#appleShadowLight)">
+        <rect x="280.7" y="408.7" width="8.18" height="8.18" rx="3" fill="#AEAEB2"/>
+        <rect x="409.1" y="227.1" width="8.18" height="8.18" rx="3" fill="#E5E5EA"/>
+        <rect x="191.95" y="291.67" width="14.78" height="14.78" rx="5" fill="#636366"/>
+        <rect x="334.5" y="73.16" width="12.48" height="12.48" rx="4" fill="#FFFFFF" opacity="0.7"/>
+        <rect x="66.81" y="504.52" width="12.49" height="12.49" rx="4" fill="#8E8E93"/>
+        <rect x="32.33" y="451.37" width="27.25" height="27.25" rx="8" fill="#3A3A3C"/>
+        <rect x="280.7" y="477.9" width="8.18" height="8.18" rx="3" fill="#AEAEB2"/>
+        <rect x="212.5" y="149.13" width="14.78" height="14.78" rx="5" fill="#D1D1D6"/>
+        <rect x="245.2" y="249.95" width="8.18" height="8.18" rx="3" fill="#FFFFFF"/>
+        <rect x="255.5" y="383" width="12.49" height="12.49" rx="4" fill="#636366"/>
+        <rect x="276.4" y="98.02" width="12.49" height="12.49" rx="4" fill="#8E8E93"/>
+        <rect x="1" y="419.75" width="27.25" height="27.25" rx="8" fill="#1C1C1E"/>
+    </g>
+</svg>
