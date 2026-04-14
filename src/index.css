@@ -241,6 +241,7 @@ section {
   transition: all 0.2s cubic-bezier(0.25, 0.1, 0.2, 1);
 }
 
+
   .sidebar-before {
     @apply max-lg:before:absolute max-lg:before:-right-64 max-lg:before:top-2/5 max-lg:before:h-[440px] max-lg:before:w-[252px] max-lg:before:bg-s1 max-lg:before:blur-[200px] max-lg:before:content-[''];
   }
