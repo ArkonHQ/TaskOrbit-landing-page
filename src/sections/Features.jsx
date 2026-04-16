@@ -2,10 +2,44 @@ import { Element } from "react-scroll";
 import clsx from "clsx";
 import { useActiveSection } from "../constants/useActiveSection.js";
 import { FeaturesData } from "../constants/featuresData.js";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 const Features = () => {
   const sectionIds = FeaturesData.map((f) => f.id);
   const activeSection = useActiveSection(sectionIds);
+  const animated = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    const animatedText = document.querySelectorAll(".animatedText");
+
+    animatedText.forEach(
+      (text, i) => {
+        gsap.fromTo(
+          text,
+          { opacity: 0, y: 60, scale: 0.95 },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            delay: i * 0.5,
+            duration: 0.7,
+            ease: "power3.out",
+            stagger: 0.2,
+            scrollTrigger: {
+              trigger: text,
+              start: "top 70%",
+              toggleActions: "play none none none",
+            },
+          },
+        );
+      },
+      { scope: animated },
+    );
+  });
 
   return (
     <section
@@ -15,11 +49,14 @@ const Features = () => {
       )}
     >
       <Element name="Features" className="w-full">
-        <div className="max-w-6xl mx-auto px-6 text-center mb-16 z-10">
-          <h1 className="text-5xl font-bold text-black text-center mb-5">
+        <div
+          ref={animated}
+          className="max-w-6xl mx-auto px-6 text-center mb-16 z-10"
+        >
+          <h1 className="animatedText text-5xl font-bold text-black text-center mb-5">
             Master your <span className="gradient-text-dark">workflow</span>
           </h1>
-          <p className="text-black font-bold text-xl">
+          <p className="animatedText text-black font-bold text-xl">
             Five powerful engines that transform how you organize, track, and
             execute tasks.
           </p>
@@ -46,7 +83,7 @@ const Features = () => {
           </div>
 
           <div className="md:col-span-2 justify-self-center flex flex-col">
-            {FeaturesData.map((feature, idx) => (
+            {FeaturesData.map((feature) => (
               <div
                 key={feature.id}
                 className="flex flex-row lg:flex-row gap-20 max-[1390px]:flex-col mb-50 items-center"
