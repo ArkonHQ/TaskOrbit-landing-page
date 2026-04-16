@@ -26,9 +26,9 @@ const Flow = () => {
             opacity: 1,
             y: 0,
             scale: 1,
-            duration: 0.9,
-            delay: index * 0.08,
-            ease: "power3.out",
+            duration: 0.6,
+            delay: index * 0.2,
+            ease: "bounce.out",
             scrollTrigger: {
               trigger: wrapper.closest(".glass-light"),
               start: "top 65%",

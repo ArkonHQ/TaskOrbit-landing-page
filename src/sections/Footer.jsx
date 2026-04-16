@@ -1,5 +1,4 @@
 import React from "react";
-import { Element } from "react-scroll";
 
 const Footer = () => (
   <footer className="bg-gray-50 border-t border-gray-200 py-12 px-6">

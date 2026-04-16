@@ -89,7 +89,7 @@ const Cta = () => {
             ref={buttonWrapperRef}
             onClick={handleClick}
             disabled={isClicked}
-            className="getBtn group cursor-pointer relative px-12 py-4.5 rounded-full bg-linear-to-br from-gray-800 via-gray-900 to-black border border-gray-600 shadow-2xl hover:shadow-[0_0_25px_rgba(0,255,255,0.3)] active:scale-95 active:shadow-lg active:bg-gradient-to-br active:from-gray-900 active:to-black transition-all duration-150 ease-out overflow-hidden"
+            className="getBtn group cursor-pointer relative px-12 py-4.5 rounded-full bg-linear-to-br from-gray-800 via-gray-900 to-black border border-gray-600 shadow-2xl hover:shadow-[0_0_25px_rgba(0,255,255,0.3)] active:scale-95 active:shadow-lg active:bg-linear-to-br active:from-gray-900 active:to-black transition-all duration-150 ease-out overflow-hidden"
           >
             <span
               className={clsx(

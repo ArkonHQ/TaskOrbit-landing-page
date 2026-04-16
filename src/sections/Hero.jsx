@@ -158,7 +158,7 @@ const Hero = ({ ref }) => {
                     <img
                       src={`/images/${isPlay ? "pause" : "play"}.png`}
                       alt={isPlay ? "pause" : "play"}
-                      className="absolute max-w-12 right-5 bottom-5 cursor-pointer bg-[#7a7a7a59] rounded-[40%] max-lg:right-[35px]"
+                      className="absolute max-w-12 right-5 bottom-5 cursor-pointer bg-[#7a7a7a59] rounded-[40%] max-lg:right-8.75 max-lg:w-6 "
                     />
                   </div>
                 </div>

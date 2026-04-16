@@ -76,7 +76,6 @@ section {
 }
 
 @layer utilities {
-  /* Typography */
   .h-num {
     @apply font-['Inter'] text-[72px] font-bold leading-[84px];
   }
@@ -88,104 +87,6 @@ section {
     }
   }
 
-  .h1 {
-    @apply text-[84px] font-black leading-[84px] tracking-[-0.03em];
-  }
-
-  .h2 {
-    @apply text-[64px] font-black leading-[64px];
-  }
-
-  .h3 {
-    @apply text-[48px] font-semibold leading-[56px] tracking-[-0.02em];
-  }
-
-  .h4 {
-    @apply text-[40px] font-semibold leading-[52px];
-  }
-
-  .h5 {
-    @apply text-[32px] font-semibold leading-[40px];
-  }
-
-  .h6 {
-    @apply text-[24px] font-medium leading-[36px];
-  }
-
-  .body-1 {
-    @apply text-[22px] leading-[36px];
-  }
-
-  .body-2 {
-    @apply text-[18px] font-semibold leading-[32px];
-  }
-
-  .body-3 {
-    @apply text-[16px] leading-[28px] tracking-[0.02em];
-  }
-
-  .base {
-    @apply text-[16px] font-medium leading-[24px] tracking-[0.03em];
-  }
-
-  .base-bold {
-    @apply font-bold leading-[24px];
-  }
-
-  .base-small {
-    @apply text-[14px] font-semibold leading-[18px] tracking-[0.03em];
-  }
-
-  .small-1 {
-    @apply text-[14px] font-semibold leading-[18px] tracking-[0.03em];
-  }
-
-  .small-2 {
-    @apply text-[12px] font-bold leading-[16px] tracking-[0.3em];
-  }
-
-  .small-compact {
-    @apply text-[12px] font-semibold leading-[18px] tracking-[0.03em];
-  }
-
-  /* Gradients */
-  .g1 {
-    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
-  }
-
-  .g2 {
-    background: linear-gradient(#3062a3, #19549f);
-  }
-
-  .g3 {
-    background: linear-gradient(#3c52d9, #0c1838);
-  }
-
-  .g4 {
-    background: linear-gradient(#253575, #162561);
-  }
-
-  .g5 {
-    background: linear-gradient(#334679, #162561);
-  }
-
-  .g6 {
-    background: linear-gradient(#334679, #0c1838);
-  }
-
-  .g7 {
-    background: linear-gradient(#1b275a, #0e1434);
-  }
-
-  .g8 {
-    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
-  }
-
-  .g9 {
-    background: linear-gradient(#080d27, transparent);
-  }
-
-  /* Common */
   .container {
     @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
@@ -215,7 +116,7 @@ section {
   .nav-logo {
     @apply relative flex flex-1 items-center justify-center;
   }
-/* Apple Silicon / M3 chip aesthetic */
+
 .nav-separator {
   @apply relative mx-5 max-lg:hidden;
   width: 16px;
@@ -234,7 +135,6 @@ section {
   border-radius: 1px;
 }
 
-/* Premium hover effect - just a whisper */
 .nav-separator:hover::before {
   background: rgba(206, 206, 206, 0.493);
   width: 2px;
@@ -285,7 +185,7 @@ section {
     background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
   }
 
-  /* Continue for all other classes following the same pattern */
+
 }
 @layer components {
 
@@ -303,39 +203,43 @@ section {
     }
   }
   @layer components {
- 
-  .glass-light {
-    @apply backdrop-blur-xl bg-white/20 border border-white/20 shadow-lg;
-  }
-  
-  .glass-dark {
-    @apply backdrop-blur-xl bg-black/40 border border-white/10 shadow-lg;
-  }
-  
-  .glass-primary {
-    @apply backdrop-blur-xl bg-p1/10 border border-p1/30 shadow-lg shadow-p1/10;
-  }
-  
-  .glass-frost {
-    @apply backdrop-blur-2xl bg-s1/40 border border-s4/20 shadow-2xl;
-  }
-  
-  .glass-crystal {
-    @apply backdrop-blur-sm bg-white/5 border border-white/10 shadow-md;
-  }
-      .gradient-text-dark {
-        @apply bg-[linear-gradient(135deg,#1c1c1e,#2e8b57)] bg-clip-text text-transparent font-bold;
-      }
+
+    .glass-light {
+      @apply backdrop-blur-xl bg-white/20 border border-white/20 shadow-lg;
+    }
+
+    .glass-dark {
+      @apply backdrop-blur-xl bg-black/40 border border-white/10 shadow-lg;
+    }
+
+    .glass-primary {
+      @apply backdrop-blur-xl bg-p1/10 border border-p1/30 shadow-lg shadow-p1/10;
+    }
+
+    .glass-frost {
+      @apply backdrop-blur-2xl bg-s1/40 border border-s4/20 shadow-2xl;
+    }
+
+    .glass-crystal {
+      @apply backdrop-blur-sm bg-white/5 border border-white/10 shadow-md;
+    }
+
+    .gradient-text-dark {
+      @apply bg-[linear-gradient(135deg,#1c1c1e,#2e8b57)] bg-clip-text text-transparent font-bold;
+    }
+
     .gradient-text-another {
       @apply bg-[linear-gradient(135deg,#BDBDCB,#CB5052)] bg-clip-text text-transparent font-bold;
     }
+
     .gradient-text-light {
       @apply bg-[linear-gradient(135deg,#fff,#425FB8)] bg-clip-text text-transparent transition-all duration-300;
     }
 
-   .video-card {
-     @apply relative h-145 w-130 bg-black rounded-4xl rounded-b-xl overflow-hidden shrink-0 shadow-2xl shadow-black
-   }
+    .video-card {
+      @apply relative h-145 w-130 bg-black rounded-4xl rounded-b-xl overflow-hidden shrink-0 shadow-2xl shadow-black
+    }
+
     .video-card video {
       @apply absolute inset-1 w-full h-full rounded-b-xl  overflow-hidden top-0 left-0 object-cover
     }
@@ -344,15 +248,19 @@ section {
       @apply absolute bottom-0 left-0 right-0 p-4 bg-transparent backdrop-blur-[90px]
       translate-y-full transition-transform duration-500;
     }
+
     .video-card {
       @apply relative transition-all duration-500 ease-in-out;
     }
+
     .video-card:hover {
       @apply -translate-y-15;
     }
+
     .video-overlay {
       @apply absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-500;
     }
+
     .video-card:hover .video-overlay {
       @apply translate-y-0;
     }
@@ -360,64 +268,17 @@ section {
     .glow {
       @apply rounded-md pl-3 pr-1 -ml-1 shadow-sm border-b-gray-900 font-semibold border-l-[5px] border-l-[#444444];
     }
-    /* If you want a more pronounced “active” state on hover as well */
+
     .glowHover:hover {
-     @apply hover:bg-black/5 hover:translate-x-1 rounded-md shadow-sm border-b-gray-900
+      @apply hover:bg-black/5 hover:translate-x-1 rounded-md shadow-sm border-b-gray-900
     }
+
     .radial-gradient-white {
-       background: linear-gradient(to right, #C6C6C6, white 8%, white 92%, #C6C6C6);
+      background: linear-gradient(to right, #C6C6C6, white 8%, white 92%, #C6C6C6);
     }
-    /* Add these to your global CSS file (or use Tailwind's @layer components) */
-
-
-      /* Container for the wires (must be position: relative) */
-      .wire-container {
-        @apply relative;
-      }
-
-      /* SVG overlay that holds the lines */
-      .wire-svg {
-        @apply absolute top-0 left-0 w-full h-full pointer-events-none z-10;
-      }
-
-      /* Base wire style (thin, blue, rounded) */
-      .wire {
-        @apply stroke-blue-500 fill-none stroke-[1.5] ;
-        stroke-dasharray: 4 6;  /* subtle dash for "wire" look */
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      /* Animated state when the target card is scrolled into view */
-      .wire.animated {
-        animation: drawWire 0.8s ease-out forwards;
-      }
-
-      /* Hover effect on cards (optional) – makes wire brighter */
-      .group:hover ~ .wire-svg .wire,
-      .wire-svg:hover .wire {
-        @apply stroke-blue-400 stroke-[2];
-        opacity: 0.9;
-      }
-    }
-
-    /* Keyframes for drawing the line */
-    @keyframes drawWire {
-      0% {
-        stroke-dasharray: 0 1000;
-        stroke-dashoffset: 0;
-        opacity: 0;
-      }
-      10% {
-        opacity: 0.8;
-      }
-      100% {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 0;
-        opacity: 0.6;
-      }
-    }
+  }
 }
+
 .premium-btn {
   @apply relative px-12 py-4.5 rounded-full cursor-pointer overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] backdrop-blur-md;
   @apply bg-linear-to-br from-cyan-400/10 via-indigo-600/10 to-transparent;
